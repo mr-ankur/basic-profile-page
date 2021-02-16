@@ -25,7 +25,6 @@ export default class Profile extends Component {
         var skills,locations
         this.state.profileData && this.state.profileData.candidateSkills && this.state.profileData.candidateSkills.map(x => x.skill.skillName).map((x,i)=> { skills = i==0 ? x : skills+", "+x})
         this.state.profileData && this.state.profileData.candidateLocations && this.state.profileData.candidateLocations.map(x => x.location.locationName).map((x,i)=> { locations = i==0 ? x : locations+", "+x})
-        console.log(333, profileData)
         return (
           <div>
             {profileData && (
